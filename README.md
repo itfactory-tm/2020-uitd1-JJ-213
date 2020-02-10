@@ -1,5 +1,5 @@
-# 1ITF HTML5 Uitdaging 1 (Stylish Portfolio)
-Dit zijn de startbestanden voor **Uitdaging 1** voor 1ITF van de Thomas More Hogeschool (campus Geel).  
+# 1ITF-OHO HTML5 Uitdaging 2 (Stylish Portfolio)
+Dit zijn de startbestanden voor **Uitdaging 2** voor 1ITF-OHO van de Thomas More Hogeschool (campus Geel).  
 Instructies volgen in de les.
 
 <p align="center">

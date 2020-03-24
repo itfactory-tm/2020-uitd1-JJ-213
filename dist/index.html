@@ -215,9 +215,30 @@
             <h3 class="text-secondary mb-0">Contact</h3>
             <h2 class="mb-5">Contact us</h2>
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, explicabo iusto? Adipisci aliquam animi
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, explicabo iusto? Adipisci aliquam animi
             autem, cupiditate doloremque enim id nulla numquam quae quasi, qui quidem tempore vel, veniam voluptatem
-            voluptatibus!</p>
+            voluptatibus!
+        </p>
+
+        <form action="contact.php" method="post">
+            <label for="voornaam">Voornaam</label>
+            <input type="text" id="voornaam" name="voornaam">
+
+            <label for="achternaam">Achternaam</label>
+            <input type="text" id="achternaam" name="achternaam">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name=email">
+
+            <label for="bericht">Bericht</label>
+            <textarea name="bericht" id="bericht" cols="30" rows="10"></textarea>
+
+            <label for="submit">Versturen</label>
+            <input type="submit" id="submit" name=submit">
+
+        </form>
     </div>
 </section>
 

@@ -1,2 +1,9 @@
 /* in stylish-portfolio.min.css wijzig je NIETS */
 /* schrijf in dit bestand je eigen stijlregels om opmaak aan te passen */
+
+
+.bg-primary
+{
+    background-color:#437FC7 !important;
+    color: inherit;
+}

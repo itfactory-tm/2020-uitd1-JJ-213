@@ -22,3 +22,15 @@ textarea.form-control
 {
     height: 70%;
 }
+
+.table {
+    margin: auto;
+    width: 50% !important;
+}
+
+#contactgegevens
+{
+    background-color: #b9732F;
+    height: 100%;
+    margin-bottom: 0px;
+}

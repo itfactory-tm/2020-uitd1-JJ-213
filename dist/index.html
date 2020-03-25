@@ -212,12 +212,43 @@
 <section id="contact" class="content-section">
     <div class="container text-center">
         <div class="content-section-heading text-center">
-            <h3 class="text-secondary mb-0">Contact</h3>
             <h2 class="mb-5">Contact us</h2>
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, explicabo iusto? Adipisci aliquam animi
-            autem, cupiditate doloremque enim id nulla numquam quae quasi, qui quidem tempore vel, veniam voluptatem
-            voluptatibus!</p>
+
+        <form action="contact.php" method="post">
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="form-group">
+                        <label for="voornaam" class="control-label">Voornaam</label>
+                        <input type="text" id="voornaam" class="form-control" name="voornaam">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="achternaam" class="control-label">Achternaam</label>
+                        <input type="text" id="achternaam" class="form-control"  name="achternaam">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="control-label">Email</label>
+                        <input type="email" id="email" class="form-control"  name=email">
+                    </div>
+                </div>
+
+                <div class="form-group col-lg-6" >
+                    <label for="bericht" class="control-label">Bericht</label>
+                    <textarea  name="bericht" id="bericht"  class="form-control" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+
+            <div class="col ">
+                <input type="submit" id="submit" name=submit" class="btn btn-primary mb-2" value="Versturen">
+            </div>
+
+
+
+
+        </form>
     </div>
 </section>
 

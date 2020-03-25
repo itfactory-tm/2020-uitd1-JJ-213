@@ -22,3 +22,19 @@ textarea.form-control
 {
     height: 70%;
 }
+
+#about
+{
+    background-color: #6DAFFE;
+}
+
+#portfolio
+{
+    background-color: #B9732F;
+}
+
+#contact
+{
+    background-color: #EDF6FF;
+
+}

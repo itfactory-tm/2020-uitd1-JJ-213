@@ -27,35 +27,37 @@
 
 <!--TODO: header van index.html overzetten-->
 
-<div>
-    <?php
-    if (isset($_POST["voornaam"]) && $_POST["voornaam"] != "") {
-        echo "<p> Voornaam: " . $_POST["voornaam"] . "</p>\n";
-    } else {
-        echo "<p> Voornaam: Niet opgegeven </p>\n";
-    }
+<section class="content-section" id="contactgegevens">
+    <div class="container text-center">
+        <h1>
+            Formulier gegevens
+        </h1>
+        <div>
+            <table class="table">
 
-    if (isset($_POST["achternaam"]) && $_POST["achternaam"] != "") {
-        echo "<p> Achternaam: " . $_POST["achternaam"] . "</p>\n";
-    } else {
-        echo "<p> Achternaam: Niet opgegeven </p>\n";
-    }
+                <?php
+                if (isset($_POST["voornaam"]) && $_POST["voornaam"] != "") {
+                    echo " <tr> <th class=\"text-left\">Voornaam</th>";
+                    echo "<td class=\"text-right\">" . $_POST["voornaam"] . "</td>\n";
+                }
 
-    if (isset($_POST["email"]) && $_POST["email"] != "") {
-        echo "<p> Email: " . $_POST["email"] . "</p>\n";
-    } else {
-        echo "<p> Email: Niet opgegeven </p>\n";
-    }
-
-
-    if (isset($_POST["bericht"]) && $_POST["bericht"] != "") {
-        echo "<p> Bericht: <br>" . $_POST["bericht"] . "</p>\n";
-    } else {
-        echo "<p> Bericht: Niet opgegeven </p>\n";
-    }
-    ?>
-</div>
-
+                if (isset($_POST["achternaam"]) && $_POST["achternaam"] != "") {
+                    echo " <tr> <th class=\"text-left\">Achternaam</th>";
+                    echo "<td class=\"text-right\">" . $_POST["achternaam"] . "</td>\n";
+                }
+                if (isset($_POST["email"]) && $_POST["email"] != "") {
+                    echo " <tr> <th class=\"text-left\">Email</th>";
+                    echo "<td class=\"text-right\">" . $_POST["email"] . "</td>\n";
+                }
+                if (isset($_POST["bericht"]) && $_POST["bericht"] != "") {
+                    echo " <tr> <th class=\"text-left\">Bericht</th>";
+                    echo "<td class=\"text-center\">" . $_POST["bericht"] . "</td>\n";
+                }
+                ?>
+            </table>
+        </div>
+    </div>
+</section>
 </body>
 </html>
 

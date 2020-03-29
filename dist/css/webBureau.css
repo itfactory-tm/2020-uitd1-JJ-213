@@ -4,7 +4,7 @@
 
 .bg-primary
 {
-    background-color:#437FC7 !important;
+    background-color:#6DAFFE !important;
     color: inherit;
 }
 
@@ -22,3 +22,34 @@ textarea.form-control
 {
     height: 70%;
 }
+
+#about
+{
+    background-color: #6DAFFE;
+}
+
+#portfolio
+{
+    background-color: #B9732F;
+}
+
+#contact
+{
+    background-color: #EDF6FF;
+}
+
+
+#sidebar-wrapper
+{
+    background-color: #437FC7;
+}
+
+.btn-primary{
+    background-color: #437FC7 !important;
+
+}
+
+.btn-primary:hover{
+     background-color: #6DAFFE !important;
+
+ }

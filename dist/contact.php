@@ -53,6 +53,14 @@
                     echo " <tr> <th class=\"text-left\">Bericht</th>";
                     echo "<td class=\"text-center\">" . $_POST["bericht"] . "</td>\n";
                 }
+                if (isset($_POST["nieuwsbrief"])) {
+                    echo " <tr> <th class=\"text-left\">Nieuwsbrief</th>";
+                    if (empty($_POST["nieuwsbrief"]))
+                        echo "<td class=\"text-center\"> Ingeschreven</td>\n";
+                    else
+                        echo "<td class=\"text-center\">Niet Ingeschreven</td>\n";
+
+                }
                 ?>
             </table>
         </div>

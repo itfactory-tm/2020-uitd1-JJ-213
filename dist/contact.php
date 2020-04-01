@@ -77,7 +77,7 @@
                 }
                 if (isset($_POST["bericht"]) && $_POST["bericht"] != "") {
                     echo " <tr> <th class=\"text-left\">Bericht</th>";
-                    echo "<td class=\"text-center\">" . $_POST["bericht"] . "</td>\n";
+                    echo "<td class=\"text-right\">" . $_POST["bericht"] . "</td>\n";
                 }
                 if (isset($_POST["nieuwsbrief"])) {
                     echo " <tr> <th class=\"text-left\">Nieuwsbrief</th>";
@@ -89,6 +89,8 @@
                 ?>
             </table>
         </div>
+        <a class="btn btn-primary btn-xl js-scroll-trigger" href="index.html">Terug naar hoofdpagina</a>
+
     </div>
 </section>
 

@@ -31,7 +31,7 @@ textarea.form-control
 
 #contactgegevens
 {
-    background-color: #b9732F;
+    background-color: #EDF6FF;
     height: 100%;
     margin-bottom: 0px;
 }
@@ -64,6 +64,9 @@ textarea.form-control
 
 .btn-primary:hover{
      background-color: #6DAFFE !important;
-
  }
+
+.contactgegevens{
+    background-color: #EDF6FF;
+}
 

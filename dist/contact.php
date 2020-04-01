@@ -54,7 +54,7 @@
 
 
 <section class="content-section" id="contactgegevens">
-    <div class="container text-center">
+    <div class="container text-center contactgegevens">
         <h1>
             Uw gegevens zijn goed ontvangen!
         </h1>
@@ -77,18 +77,20 @@
                 }
                 if (isset($_POST["bericht"]) && $_POST["bericht"] != "") {
                     echo " <tr> <th class=\"text-left\">Bericht</th>";
-                    echo "<td class=\"text-center\">" . $_POST["bericht"] . "</td>\n";
+                    echo "<td class=\"text-right\">" . $_POST["bericht"] . "</td>\n";
                 }
                 if (isset($_POST["nieuwsbrief"])) {
                     echo " <tr> <th class=\"text-left\">Nieuwsbrief</th>";
                     if (empty($_POST["nieuwsbrief"]))
-                        echo "<td class=\"text-center\"> Ingeschreven</td>\n";
+                        echo "<td class=\"right\"> Ingeschreven</td>\n";
                     else
-                        echo "<td class=\"text-center\">Niet Ingeschreven</td>\n";
+                        echo "<td class=\"text-right\">Niet Ingeschreven</td>\n";
                 }
                 ?>
             </table>
         </div>
+        <a class="btn btn-primary btn-xl js-scroll-trigger" href="index.html">Terug naar hoofdpagina</a>
+
     </div>
 </section>
 

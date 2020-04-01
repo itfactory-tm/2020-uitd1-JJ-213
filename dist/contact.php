@@ -25,12 +25,38 @@
 </head>
 <body>
 
-<!--TODO: header van index.html overzetten-->
+<!-- Navigation -->
+<a class="menu-toggle rounded" href="#">
+    <i class="fas fa-bars"></i>
+</a>
+<nav id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+        <li class="sidebar-brand">
+            <a class="js-scroll-trigger" href="index.html#page-top">Ikomeye Design</a>
+        </li>
+        <li class="sidebar-nav-item">
+            <a class="js-scroll-trigger" href="index.html#page-top">Home</a>
+        </li>
+        <li class="sidebar-nav-item">
+            <a class="js-scroll-trigger" href="index.html#about">Over ons</a>
+        </li>
+        <li class="sidebar-nav-item">
+            <a class="js-scroll-trigger" href="index.html#team">Het team</a>
+        </li>
+        <li class="sidebar-nav-item">
+            <a class="js-scroll-trigger" href="index.html#portfolio">Portfolio</a>
+        </li>
+        <li class="sidebar-nav-item">
+            <a class="js-scroll-trigger" href="index.html#contact">Contacteer ons</a>
+        </li>
+    </ul>
+</nav>
+
 
 <section class="content-section" id="contactgegevens">
-    <div class="container text-center">
+    <div class="container text-center contactgegevens">
         <h1>
-            Formulier gegevens
+            Uw gegevens zijn goed ontvangen!
         </h1>
         <div>
             <table class="table">
@@ -51,13 +77,29 @@
                 }
                 if (isset($_POST["bericht"]) && $_POST["bericht"] != "") {
                     echo " <tr> <th class=\"text-left\">Bericht</th>";
-                    echo "<td class=\"text-center\">" . $_POST["bericht"] . "</td>\n";
+                    echo "<td class=\"text-right\">" . $_POST["bericht"] . "</td>\n";
+                }
+                if (isset($_POST["nieuwsbrief"])) {
+                    echo " <tr> <th class=\"text-left\">Nieuwsbrief</th>";
+                    if (empty($_POST["nieuwsbrief"]))
+                        echo "<td class=\"right\"> Ingeschreven</td>\n";
+                    else
+                        echo "<td class=\"text-right\">Niet Ingeschreven</td>\n";
                 }
                 ?>
             </table>
         </div>
+        <a class="btn btn-primary btn-xl js-scroll-trigger" href="index.html">Terug naar hoofdpagina</a>
+
     </div>
 </section>
+
+<!-- JS: jQuery, Bootstrap, stylish portfolio -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+<script src="js/stylish-portfolio.min.js"></script>
+
 </body>
 </html>
 

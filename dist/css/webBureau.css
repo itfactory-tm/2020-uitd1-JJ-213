@@ -2,24 +2,20 @@
 /* schrijf in dit bestand je eigen stijlregels om opmaak aan te passen */
 
 
-.bg-primary
-{
-    background-color:#6DAFFE !important;
+.bg-primary {
+    background-color: #6DAFFE !important;
     color: inherit;
 }
 
-.btn-primary
-{
+.btn-primary {
     font-size: 24px;
 }
 
-textarea
-{
+textarea {
     resize: none;
 }
 
-textarea.form-control
-{
+textarea.form-control {
     height: 70%;
 }
 
@@ -36,31 +32,28 @@ textarea.form-control
     margin-bottom: 0px;
 }
 
-#about
-{
+#about {
     background-color: #6DAFFE;
 }
 
-#portfolio
-{
+#portfolio {
     background-color: #B9732F;
 }
 
-#contact
-{
+#contact {
     background-color: #EDF6FF;
 }
 
 
-#sidebar-wrapper
-{
+#sidebar-wrapper {
     background-color: #437FC7;
 }
 
-.btn-primary{
+.btn-primary {
     background-color: #437FC7 !important;
 
 }
+
 
 .btn-primary:hover{
      background-color: #6DAFFE !important;

@@ -22,7 +22,7 @@
         "url": "https://github.com/pverhaert/1ITF_onepage_stylish_portfolio.git"
     },
     "devDependencies": {
-        "browser-sync": "^2.26.7",
+        "browser-sync": "^2.27.10",
         "gulp": "^4.0.2"
     }
 }
